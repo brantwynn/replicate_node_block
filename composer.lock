@@ -1,0 +1,32 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "57597bc63ce3c406f262f747ea22c16d",
+    "content-hash": "dcf63ad520780d977fdea4a2a2cf462e",
+    "packages": [
+        {
+            "name": "dawehner/replicate",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dawehner/replicate",
+                "reference": "origin/8.x-1.x"
+            },
+            "type": "library",
+            "time": "2016-05-26 16:21:18"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "dawehner/replicate": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
