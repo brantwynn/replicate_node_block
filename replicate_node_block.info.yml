@@ -1,0 +1,7 @@
+name: replicate_node_block
+type: module
+description: Adds a block that allows the user to replicate a node.
+core: 8.x
+package: Custom
+dependencies:
+  - replicate
