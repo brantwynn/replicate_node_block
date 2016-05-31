@@ -1,14 +1,31 @@
 {
-  "name": "drupal/replicate_node_block",
+  "name": "brantwynn/replicate_node_block",
   "type": "drupal-module",
   "description": "Adds a block that allows the user to replicate a node.",
   "keywords": ["Drupal"],
   "license": "GPL-2.0+",
-  "homepage": "https://www.drupal.org/project/replicate_node_block",
+  "homepage": "https://github.com/brantwynn/replicate_node_block",
   "minimum-stability": "dev",
   "support": {
-    "issues": "http://drupal.org/project/issues/replicate_node_block",
-    "source": "http://cgit.drupalcode.org/replicate_node_block"
+    "issues": "https://github.com/brantwynn/replicate_node_block/issues",
+    "source": "https://github.com/brantwynn/replicate_node_block"
   },
-  "require": { }
+  "repositories": [
+    { "type": "composer", "url": "https://packagist.drupal-composer.org" },
+    {
+      "type": "package",
+      "package": {
+        "name": "dawehner/replicate",
+        "version": "dev-master",
+        "source": {
+          "url": "https://github.com/dawehner/replicate",
+          "type": "git",
+          "reference": "origin/8.x-1.x"
+        }
+      }
+    }
+  ],
+  "require": {
+    "dawehner/replicate": "dev-master"
+  }
 }
