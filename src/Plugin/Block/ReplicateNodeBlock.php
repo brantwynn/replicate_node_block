@@ -57,7 +57,7 @@ class ReplicateNodeBlock extends BlockBase implements ContainerFactoryPluginInte
   public function build() {
     $block = [];
     $node = $this->getContextValue('node');
-    $block = [$this->formBuilder->getForm('\Drupal\replicate_node_block\Form\ReplicateNodeForm', $node)];
+    $block = [$this->formBuilder->getForm('\Drupal\replicate_node_block\Form\ReplicateNodeBlockForm', $node)];
     return $block;
   }
 

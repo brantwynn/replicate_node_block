@@ -18,11 +18,11 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 /**
- * Class ReplicateNodeForm.
+ * Class ReplicateNodeBlockForm.
  *
  * @package Drupal\replicate_node_block\Form
  */
-class ReplicateNodeForm extends FormBase {
+class ReplicateNodeBlockForm extends FormBase {
 
   /**
    * The entity type manager.
@@ -67,6 +67,8 @@ class ReplicateNodeForm extends FormBase {
   public function buildForm(array $form, FormStateInterface $form_state, NodeInterface $node = NULL) {
     $form = [];
     if ($node != NULL && $nid = $node->id()) {
+      $node_form = $this->entityTypeManager->getFormObject('node', 'default')->setEntity($node);
+      $what = $node_form;
       $form['node_id'] = array(
         '#type' => 'hidden',
         '#value' => $nid
