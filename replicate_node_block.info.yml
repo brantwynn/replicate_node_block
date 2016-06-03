@@ -1,4 +1,4 @@
-name: replicate_node_block
+name: Replicate Node Block
 type: module
 description: Adds a block that allows the user to replicate a node.
 core: 8.x

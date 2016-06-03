@@ -67,8 +67,6 @@ class ReplicateNodeBlockForm extends FormBase {
   public function buildForm(array $form, FormStateInterface $form_state, NodeInterface $node = NULL) {
     $form = [];
     if ($node != NULL && $nid = $node->id()) {
-      $node_form = $this->entityTypeManager->getFormObject('node', 'default')->setEntity($node);
-      $what = $node_form;
       $form['node_id'] = array(
         '#type' => 'hidden',
         '#value' => $nid
